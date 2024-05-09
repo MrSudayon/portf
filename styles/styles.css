@@ -1,0 +1,49 @@
+* {
+    scroll-behavior: smooth;
+}
+
+:root { 
+    --bg-color: #1F1F29;
+    --main-color: rgba(0, 0, 0, 0.9);
+    --sec-color: #ffffff; /* or 293556 */ 
+    --bd-color: rgba(255, 255, 255, 0.2);
+    
+    --default-bg: 
+    linear-gradient(322deg, #3668ff, rgba(186, 74, 255, 0) 35%),
+    linear-gradient(178deg, #00269D, rgba(0, 138, 255, 0) 70%), 
+    linear-gradient(24deg, #3668ff, rgba(0, 255, 198, 0) 70%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+html, body, section {
+    block-size: 100%;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section:nth-of-type(even) {
+    color: white;
+    background: var(--main-color);
+}
+
+section:nth-of-type(odd) {
+    color: black;
+    background: var(--sec-color)
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    font-size: 4rem;
+}
