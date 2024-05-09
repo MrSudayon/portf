@@ -15,6 +15,11 @@
     linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 }
 
+a {
+    text-decoration: none;
+    color: var(--bd-color);
+}
+
 html, body, section {
     block-size: 100%;
 }
@@ -30,6 +35,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 section:nth-of-type(even) {
@@ -46,4 +52,8 @@ body {
     margin: 0;
     font-family: system-ui, sans-serif;
     font-size: 4rem;
+}
+
+.content {
+
 }
