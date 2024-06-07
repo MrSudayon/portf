@@ -1,3 +1,7 @@
+@import url('https://fonts.cdnfonts.com/css/apercu-pro');
+@import url('https://fonts.cdnfonts.com/css/apercu-pro?styles=109347');
+
+
 * {
     scroll-behavior: smooth;
 }
@@ -28,9 +32,16 @@ html {
     scroll-snap-type: y mandatory;
 }
 
+h1 {
+    font-family: 'Apercu Pro';
+    font-weight: 600;
+}
+
 section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
+
+    font-family: 'Apercu Pro', sans-serif;
 
     display: flex;
     align-items: center;
