@@ -65,6 +65,7 @@ body {
     font-size: 4rem;
 }
 
-.content {
+.content a {
+    color: black;  
 
 }
